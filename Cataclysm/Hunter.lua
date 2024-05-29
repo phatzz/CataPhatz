@@ -2174,6 +2174,10 @@ hunter:RegisterAbilities( {
                 cost = cost * 0.5
             end
 
+            if buff.lock_and_load.up then
+                cost = 0
+            end
+
             return cost
         end,
         spendType = "focus",
